@@ -1,0 +1,218 @@
+<project>
+  <Metadata>
+    <metadata>
+      <PackageName>CompareServers</PackageName>
+      <Author>Paul Martin</Author>
+      <Version>1.0</Version>
+      <Revision />
+      <License />
+      <Comment />
+      <Attributes />
+      <Readme>After installing the package...
+
+1. Modify the App_Config/Include/CompareServers.config to setup all necessary &lt;database&gt; config entries.
+
+2. Make sure you have created matching ConnectionStrings.config entries for each uncommented &lt;database&gt; entry in step #1
+
+3. (Optional) Modify the default UI settings here: /sitecore/system/modules/compareservers/settings</Readme>
+      <Publisher />
+      <PostStep />
+      <PackageID />
+    </metadata>
+  </Metadata>
+  <SaveProject>True</SaveProject>
+  <Sources>
+    <xitems>
+      <Entries>
+        <x-item>/core/sitecore/system/Field types/Developer Types/DatabaseMultilist/{79E0EA37-7DEB-4622-B3A8-75BCA39E3276}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms />
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>CustomField</Name>
+    </xitems>
+    <xitems>
+      <Entries>
+        <x-item>/master/sitecore/templates/CompareServers Module/{A875AE19-DFC5-4965-8F4D-40E66A6008A0}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/CompareServers Module/Settings/__Standard Values/{882EF029-5B76-45BA-98CB-0BE32BDBE150}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/CompareServers Module/Settings/{A2272DAA-874C-4688-ACA3-E2E09F0C7296}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/CompareServers Module/Settings/Settings/{AF6FCA14-078E-437B-9455-7851E7AA0B6F}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/CompareServers Module/Settings/Settings/CompareDB/{07D47B03-C094-46D6-B251-91C527E04D7B}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/CompareServers Module/Settings/Settings/DefaultPath/{E11E83BB-9E75-4DAA-842F-28705886E8EF}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/CompareServers Module/Settings/Settings/LocalDB/{E051B07B-32EA-429B-8594-8740CFED989C}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms />
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Templates</Name>
+    </xitems>
+    <xitems>
+      <Entries>
+        <x-item>/master/sitecore/system/Modules/CompareServers/{D2BC3257-32C9-44AC-97A7-B6E21515F895}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/CompareServers/Settings/{BB6794CD-4157-4A87-BF11-5788B8107417}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Settings</Name>
+    </xitems>
+    <xfiles>
+      <Entries>
+        <x-item>/App_Config/Include/CompareServers.config</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Config file</Name>
+    </xfiles>
+    <xfiles>
+      <Entries>
+        <x-item>/sitecore modules/Shell/CompareServers/CompareServers.aspx</x-item>
+        <x-item>/sitecore modules/Shell/CompareServers/images/</x-item>
+        <x-item>/sitecore modules/Shell/CompareServers/images/export.png</x-item>
+        <x-item>/sitecore modules/Shell/CompareServers/images/export-all.png</x-item>
+        <x-item>/sitecore modules/Shell/CompareServers/images/help2.png</x-item>
+        <x-item>/sitecore modules/Shell/CompareServers/images/import.png</x-item>
+        <x-item>/sitecore modules/Shell/CompareServers/images/import-all.png</x-item>
+        <x-item>/sitecore modules/Shell/CompareServers/images/lastnode.png</x-item>
+        <x-item>/sitecore modules/Shell/CompareServers/images/matched.png</x-item>
+        <x-item>/sitecore modules/Shell/CompareServers/images/mismatch.png</x-item>
+        <x-item>/sitecore modules/Shell/CompareServers/images/missing-left.png</x-item>
+        <x-item>/sitecore modules/Shell/CompareServers/images/missing-right.png</x-item>
+        <x-item>/sitecore modules/Shell/CompareServers/images/node.png</x-item>
+        <x-item>/sitecore modules/Shell/CompareServers/images/vline.png</x-item>
+        <x-item>/sitecore modules/Shell/CompareServers/css/</x-item>
+        <x-item>/sitecore modules/Shell/CompareServers/css/compare.servers.css</x-item>
+        <x-item>/sitecore modules/Shell/CompareServers/css/simple.tree.css</x-item>
+        <x-item>/sitecore modules/Shell/CompareServers/css/smoothness/</x-item>
+        <x-item>/sitecore modules/Shell/CompareServers/css/smoothness/images/</x-item>
+        <x-item>/sitecore modules/Shell/CompareServers/css/smoothness/images/ui-bg_flat_0_aaaaaa_40x100.png</x-item>
+        <x-item>/sitecore modules/Shell/CompareServers/css/smoothness/images/ui-bg_flat_75_ffffff_40x100.png</x-item>
+        <x-item>/sitecore modules/Shell/CompareServers/css/smoothness/images/ui-bg_glass_55_fbf9ee_1x400.png</x-item>
+        <x-item>/sitecore modules/Shell/CompareServers/css/smoothness/images/ui-bg_glass_65_ffffff_1x400.png</x-item>
+        <x-item>/sitecore modules/Shell/CompareServers/css/smoothness/images/ui-bg_glass_75_dadada_1x400.png</x-item>
+        <x-item>/sitecore modules/Shell/CompareServers/css/smoothness/images/ui-bg_glass_75_e6e6e6_1x400.png</x-item>
+        <x-item>/sitecore modules/Shell/CompareServers/css/smoothness/images/ui-bg_glass_95_fef1ec_1x400.png</x-item>
+        <x-item>/sitecore modules/Shell/CompareServers/css/smoothness/images/ui-bg_highlight-soft_75_cccccc_1x100.png</x-item>
+        <x-item>/sitecore modules/Shell/CompareServers/css/smoothness/images/ui-icons_222222_256x240.png</x-item>
+        <x-item>/sitecore modules/Shell/CompareServers/css/smoothness/images/ui-icons_2e83ff_256x240.png</x-item>
+        <x-item>/sitecore modules/Shell/CompareServers/css/smoothness/images/ui-icons_454545_256x240.png</x-item>
+        <x-item>/sitecore modules/Shell/CompareServers/css/smoothness/images/ui-icons_888888_256x240.png</x-item>
+        <x-item>/sitecore modules/Shell/CompareServers/css/smoothness/images/ui-icons_cd0a0a_256x240.png</x-item>
+        <x-item>/sitecore modules/Shell/CompareServers/css/smoothness/jquery-ui-1.8.18.custom.css</x-item>
+        <x-item>/sitecore modules/Shell/CompareServers/js/</x-item>
+        <x-item>/sitecore modules/Shell/CompareServers/js/jquery.contextMenu.css</x-item>
+        <x-item>/sitecore modules/Shell/CompareServers/js/jquery.contextMenu.js</x-item>
+        <x-item>/sitecore modules/Shell/CompareServers/js/jquery.metadata.js</x-item>
+        <x-item>/sitecore modules/Shell/CompareServers/js/jquery.ui.position.js</x-item>
+        <x-item>/sitecore modules/Shell/CompareServers/js/jquery-1.7.1.min.js</x-item>
+        <x-item>/sitecore modules/Shell/CompareServers/js/jquery-ui-1.8.18.custom.min.js</x-item>
+        <x-item>/sitecore modules/Shell/CompareServers/Service.asmx</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>UI</Name>
+    </xfiles>
+    <xfiles>
+      <Entries>
+        <x-item>/bin/Sitecore.SharedSource.CompareServers.dll</x-item>
+        <x-item>/bin/Sitecore.SharedSource.CompareServers.pdb</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms />
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>DLL</Name>
+    </xfiles>
+    <xitems>
+      <Entries>
+        <x-item>/core/sitecore/content/Applications/CompareServers/{9EC83CA2-E588-477A-8B95-6963F6D748FD}/invariant/0</x-item>
+        <x-item>/core/sitecore/content/Documents and settings/All users/Start menu/Right/CompareServers/{08CCA0F3-5723-4601-B0AF-1F7614B0520A}/invariant/0</x-item>
+        <x-item>/core/sitecore/layout/Layouts/Applications/CompareServers/{F49D825C-F345-48F0-B4EA-642BE49732CF}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Core App Setup</Name>
+    </xitems>
+  </Sources>
+  <Converter>
+    <TrivialConverter>
+      <Transforms />
+    </TrivialConverter>
+  </Converter>
+  <Include />
+  <Exclude />
+  <Name />
+</project>

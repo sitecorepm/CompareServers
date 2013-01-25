@@ -1,0 +1,41 @@
+﻿/*credit: http://odyniec.net/articles/turning-lists-into-trees/ */
+ul.root-node, ul.root-node ul
+{
+    list-style-type: none;
+    background: url(../images/vline.png) repeat-y;
+    margin: 0;
+    padding: 0;
+}
+
+ul.root-node, ul.root-node > li
+{
+    background-image: none !important;
+}
+
+ul.root-node ul
+{
+    margin-left: 5px;
+}
+
+ul.root-node li
+{
+    margin: 0;
+    padding: 0 10px;
+    line-height: 20px;
+    background: url(../images/node.png) no-repeat;
+    color: #369;
+    font-weight: bold;
+}
+ul.root-node li > span
+{
+    cursor: pointer;
+}
+ul.root-node span.selected
+{
+    background-color: #E8E8E8 !important;
+}
+
+ul.root-node li.last
+{
+    background: #fff url(../images/lastnode.png) no-repeat;
+}

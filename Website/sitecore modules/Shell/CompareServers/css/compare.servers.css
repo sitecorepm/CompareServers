@@ -1,0 +1,83 @@
+﻿body
+{
+    background-color: White;
+}
+
+.criteria
+{
+    background-color: #E8E8E8;
+    padding: 10px;
+}
+.diff
+{
+    border-collapse: collapse;
+    border-left: 1px solid black;
+}
+.diff td
+{
+    vertical-align: top;
+    border: 1px solid #E8E8E8;
+}
+.diff th
+{
+    background-color: #E8E8E8;
+    border: 1px solid white;
+}
+.fieldset
+{
+    border: 1px solid white;
+    padding: 15px;
+}
+.fieldset.options
+{
+    margin-top: 20px;
+}
+.fieldset-legend
+{
+    color: White;
+    font-size: 1.2em;
+    padding: 0px 5px;
+    background-color: #787878;
+    width: 200px;
+    margin-top: -25px;
+    margin-bottom: 10px;
+}
+.results-container
+{
+    position: relative;
+}
+.tree-container
+{
+    padding: 0;
+    width: 25%;
+    overflow: auto;
+}
+.tree-container span[class^='comparison-node']:hover
+{
+    background-color: #EEEEEE !important;
+}
+.comparison-info
+{
+    top: 0px;
+    left: 25%;
+    position: absolute;
+    overflow: auto;
+}
+.ui-widget
+{
+    font-family: inherit;
+    font-size: inherit;
+}
+.hidden
+{
+    display: none;
+}
+.dialog-content .fieldset
+{
+    border: 1px solid black;
+}
+#help
+{
+    float: right;
+    cursor: pointer;
+}
